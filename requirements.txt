@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+psycopg2-binary
+pytest>=8.4.1
+spyne
+lxml
+PyQt5
+black>=25.1.0
+spyne
+lxml

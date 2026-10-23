@@ -29,8 +29,7 @@ API REST en conteneur : `docker compose up -d --build` (port 8001).
 - Pas de contrat d'interface : les autres équipes ne savent pas comment utiliser le système sans lire le code.
 - Une modification (par exemple le schéma de la base) impacte tout le script ; le déploiement est tout ou rien.
 - Mise à l'échelle impossible par composant, et la validation n'existe que dans l'interface locale.
-- Couplage fort à Python et à PyQt5 : aucun client dans un autre langage.
-
+- Couplage fort à Python et à PyQt5 : aucun client dans un autre langage.HH
 ## Partie 2 — SOAP : plus de structure et de contrats
 - **Contrat formel (WSDL)** : le service décrit ses opérations, ses types et ses erreurs dans un document lisible par machine ; le monolithe n'a que du code.
 - **Typage fort** : le schéma XML impose des entiers, des réels et des champs obligatoires ; une requête invalide (`id` = "abc") est rejetée avant d'atteindre la logique.
